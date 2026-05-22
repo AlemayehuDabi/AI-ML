@@ -57,13 +57,13 @@ math_ope = np.array([4,16,25,81])
 c = np.array([1,2,3,4,5,6])
 c_index_1 = c[3]
 c_index_2 = c[-1]
-print(c_index_1)
-print(c_index_2)
+# print(c_index_1)
+# print(c_index_2)
 
 c_slice_1 = c[1:4]
-print(c_slice_1)
+# print(c_slice_1)
 
 c_reshape_1 = c.reshape(3,2)
 c_reshape_2 = np.reshape(c, (2,3))
-print(c_reshape_1)
-print(c_reshape_2)
+# print(c_reshape_1)
+# print(c_reshape_2)
