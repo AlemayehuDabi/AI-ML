@@ -35,3 +35,35 @@ a = np.arange(6).reshape((3, 2))
 
 new_axis = a[:, np.newaxis]
 # print(new_axis)
+
+
+# Element-wise operation on Arrays
+a = np.array([1,2,3])
+b = np.array([4,5,6])
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+
+# mathematical operations
+math_ope = np.array([4,16,25,81])
+# print(np.sqrt(math_ope))
+# print(np.mean(math_ope))
+# print(np.max(math_ope))
+# print(np.sum(math_ope))
+
+
+# Indexing, Slicing, Reshaping
+c = np.array([1,2,3,4,5,6])
+c_index_1 = c[3]
+c_index_2 = c[-1]
+print(c_index_1)
+print(c_index_2)
+
+c_slice_1 = c[1:4]
+print(c_slice_1)
+
+c_reshape_1 = c.reshape(3,2)
+c_reshape_2 = np.reshape(c, (2,3))
+print(c_reshape_1)
+print(c_reshape_2)
