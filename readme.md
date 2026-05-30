@@ -1,1 +1,1 @@
-Learning AI-ML
+Learning AI/ML
