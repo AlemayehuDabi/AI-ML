@@ -15,9 +15,30 @@ tail = df_data.tail()
 # print(tail)
 
 # summary info
-summary = df_data.info()
+# summary = df_data.info()
 # print(summary)
 
 # detailed info
 detail = df_data.describe()
-print(detail)
+# print(detail)
+
+# selecting and indexing
+# selecting columns
+col = df_data[["Name"]]
+# print(col)
+
+# filtering rows
+fil_row = df_data[df_data["Age"] < 20]
+# print(fil_row)
+
+# selecting by position
+select_row_first_index = df_data.iloc[0] # by row
+# print(select_row_first_index)
+select_col_first_index = df_data.iloc[:, 0] # by col
+# print(select_col_first_index)
+select_col_second_index = df_data.iloc[:, 1] # but if the index execed - python interpreter throws error saying out-of-bounds 
+# print(select_col_second_index)
+
+# selecting by level
+select_level_name = df_data.loc[:,"Name"]
+# print(select_level_name)
