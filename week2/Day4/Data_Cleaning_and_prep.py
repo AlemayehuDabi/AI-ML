@@ -1,8 +1,8 @@
-# concat, merge, join
+# data cleaing and preparation
 import pandas as pd
 import numpy as np
 
-read_csv = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv')
+# read_csv = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv')
 
 df = pd.DataFrame({"Employee": ["Amina", "James", "Priya", "Chen", "Maria", "Omar"],
     "Age": [29, np.nan, 34, 41, np.nan, 27],
