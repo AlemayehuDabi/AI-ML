@@ -28,9 +28,13 @@ df["Age"] = df["Age"].fillna(0)
 # print("df after filling it w/ specific value: \n", df)
 
 # forward fill
-df["Salary"] = df["Salary"].ffill()
+df["City"] = df["City"].ffill()
 # print("df after ffill: \n", df)
 
 # backward fill
 df["Join_Date"] = df["Join_Date"].bfill()
 # print("df after bfill: \n", df)
+
+# interpoliation
+df["Salary"] = df["Salary"].interpolate()
+print("after interpolated: \n", df)
