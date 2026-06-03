@@ -15,8 +15,22 @@ print("Row Df: \n", df)
 
 # droping row w/ nan value
 row_without_nan = df.dropna()
-print("Drop row w/ nan value: \n", row_without_nan)
+# print("Drop row w/ nan value: \n", row_without_nan)
 
 # droping col w/ nan value
 col_without_nan = df.dropna(axis=1)
-print("Drop col w/ nan value: \n", col_without_nan)
+# print("Drop col w/ nan value: \n", col_without_nan)
+
+
+# filling missing values
+# specific value
+df["Age"] = df["Age"].fillna(0)
+# print("df after filling it w/ specific value: \n", df)
+
+# forward fill
+df["Salary"] = df["Salary"].ffill()
+# print("df after ffill: \n", df)
+
+# backward fill
+df["Join_Date"] = df["Join_Date"].bfill()
+# print("df after bfill: \n", df)
