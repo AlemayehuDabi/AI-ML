@@ -11,7 +11,7 @@ df = pd.DataFrame({"Employee": ["Amina", "James", "Priya", "Chen", "Maria", "Oma
     "Join_Date": ["2022-03-14", "2021-11-01", "2023-06-20", np.nan, "2020-09-05", "2024-01-18"]})
 
 # row df
-print("Row Df: \n", df)
+# print("Row Df: \n", df)
 
 # droping row w/ nan value
 row_without_nan = df.dropna()
@@ -37,4 +37,12 @@ df["Join_Date"] = df["Join_Date"].bfill()
 
 # interpoliation
 df["Salary"] = df["Salary"].interpolate()
-print("after interpolated: \n", df)
+# print("after interpolated: \n", df)
+
+# renaming columns
+df.rename(columns={"Salary": "Payment"}, inplace=True) # we use inplace to make the change on the existing df
+# print("renamed: \n", df)
+
+# Data Type Casting
+df["Payment"] = df["Payment"].astype('int')
+# print("Changing the Data types: \n", df)
