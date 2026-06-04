@@ -11,11 +11,16 @@ data = {
 
 df = pd.DataFrame(data)
 
-print('Original Df: \n', df)
+# print('Original Df: \n', df)
 
+# filling missing data
 df["Age"] = df["Age"].fillna(df["Age"].mean())
 df["Score"] = df["Score"].interpolate()
 
-df["Name"] = df["Name"].fillna("Alex", inplace=True)
+df["Name"] = df["Name"].fillna("Alex")
 
-print("Updated Dataset: \n", df)
+# print("Updated Dataset: \n", df)
+
+# renaming cols
+df = df.rename(columns={"Name": 'Student:Name', "Age": 'Student:Age', "Score": 'Exam:Score'})
+print('Renamed Cols: \n', df)
