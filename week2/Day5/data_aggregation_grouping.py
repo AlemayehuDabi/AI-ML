@@ -34,7 +34,10 @@ do_agg_on_group = group_one_col.agg({
     'Quantity': ['mean', 'sum']
 })
 
-print('Using Agg funtion: \n', do_agg_on_group)
+# print('Using Agg funtion: \n', do_agg_on_group)
 
+# count method on grouped data using two cols
+do_count = grouped.count()
+print("Do Count: \n", do_count)
 
  
