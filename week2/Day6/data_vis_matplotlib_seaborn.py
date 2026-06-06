@@ -1,4 +1,7 @@
 import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
+import pandas as pd
 
 # Basic Matplotlib synthax
 x = ['Ana','Khali','Miko','Josi']
@@ -27,7 +30,21 @@ y= [10,17, 15, 14]
 # plt.show()
 
 # scatter plot
-plt.scatter(x,y,color='Red') # it is used to visualize the r/ship b/n two cont variables 
-plt.title("Show the potenitial danger area")
+# plt.scatter(x,y,color='Red') # it is used to visualize the r/ship b/n two cont variables 
+# plt.title("Show the potenitial danger area")
 
+# plt.show()
+
+
+#  ---------------------- Seaborn ----------------------------
+data = np.random.rand(5,5)
+# heatmap
+# sns.heatmap(data, cmap='coolwarm', annot=True)
+# plt.title("Heat Map")
+# plt.show()
+
+df = pd.DataFrame(data)
+
+# pairplot
+sns.pairplot(df)
 plt.show()
