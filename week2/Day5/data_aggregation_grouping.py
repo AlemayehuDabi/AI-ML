@@ -50,5 +50,3 @@ do_min = group_one_col.min()
 # max
 do_max = group_one_col.max()
 # print("Do Max: \n", do_max)
-
- 
