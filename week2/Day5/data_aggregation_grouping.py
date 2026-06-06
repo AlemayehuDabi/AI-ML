@@ -38,6 +38,17 @@ do_agg_on_group = group_one_col.agg({
 
 # count method on grouped data using two cols
 do_count = grouped.count()
-print("Do Count: \n", do_count)
+# print("Do Count: \n", do_count)
+
+do_count_one_col_group = group_one_col.count()
+# print("Do Count One Col: \n ", do_count_one_col_group)
+
+# min
+do_min = group_one_col.min()
+# print("Do Min: \n", do_min)
+
+# max
+do_max = group_one_col.max()
+# print("Do Max: \n", do_max)
 
  
