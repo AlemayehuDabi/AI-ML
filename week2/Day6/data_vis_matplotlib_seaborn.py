@@ -19,3 +19,9 @@ y= [10,17, 15, 14]
 # plt.title('Students Age')
 # plt.bar(x,y, color='blue')
 # plt.show()
+
+# Histogram
+data = [1,2,2,3,3,4,4,4,5,5,5,6,6]
+plt.hist(data, bins=4, color='blue', edgecolor='green')
+plt.title('Histogram')
+plt.show()
