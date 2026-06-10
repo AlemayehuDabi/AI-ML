@@ -41,3 +41,10 @@ print("Second Class: \n", second_class)
 # plt.bar(first_class["PassengerId"], first_class["Survived"], label="Name-Age-trend", color="blue", edgecolor="red")
 # plt.title("Name-Age-Graph")
 # plt.show()
+
+# histo graph
+plt.hist(first_class["Survived"], label="Histograph", bins=10, color='Green')
+plt.title("First Class Titanic Survived Distribution")
+plt.xlabel("Survived Dis")
+plt.ylabel("Frequency Dis")
+plt.show()
