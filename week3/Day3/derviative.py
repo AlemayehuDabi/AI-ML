@@ -1,6 +1,6 @@
-import sumpy as sp
+import sympy as sp
 
-x = sp.symbol('x')
+x = sp.Symbol('x')
 f = x**2
 
 derviative = sp.diff(f, x)
